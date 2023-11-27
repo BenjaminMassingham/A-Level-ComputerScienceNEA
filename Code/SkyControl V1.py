@@ -25,7 +25,7 @@ ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue") 
 
 #Creatin the Main Menu Page
-class MainMenu(tk.Tk):
+class MainMenu(ctk.CTk):
 
     #Setting the default window size
     width = 1200
@@ -466,7 +466,7 @@ class MainMenu(tk.Tk):
             self.remove_plane(key)
 
 #Creating the Main Login page
-class MainLogin(tk.Toplevel):
+class MainLogin(ctk.CTkToplevel):
 
     #Setting the default window size
     width = 1000
@@ -675,7 +675,7 @@ class MainLogin(tk.Toplevel):
         self.deiconify()
 
 #Creating the Sign Up page
-class SignUpPage(tk.Toplevel):
+class SignUpPage(ctk.CTkToplevel):
 
     #Setting the Sign Up pages height and width 
     width = 400
@@ -973,7 +973,7 @@ class SignUpPage(tk.Toplevel):
             self.quit()
 
 #Creating a SuperErrorClass that can cover all of the errors
-class Popup(tk.Toplevel):
+class Popup(ctk.CTkToplevel):
 
     #Setting the Sign Up pages height and width 
     width = 600
@@ -1025,7 +1025,7 @@ class Popup(tk.Toplevel):
         self.quit()
 
 #Exit Window popup
-class ExitMenu(tk.Toplevel):
+class ExitMenu(ctk.CTkToplevel):
     
     #Setting the Sign Up pages height and width 
         width = 600
